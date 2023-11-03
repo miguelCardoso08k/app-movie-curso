@@ -17,7 +17,7 @@ const Home = () => {
       <Banner image="favoritos" />
       <Container>
         {categories.map((category, index) => (
-          <Category category={category}>
+          <Category category={category} key={index}>
             <Carousel>
               {filterCategory(index).map(({ id }) => {
                 return <Card id={id} key={id} />;

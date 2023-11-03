@@ -5,6 +5,7 @@ import NotFound from "./pages/NotFound/NotFound.jsx";
 import Search from "./pages/Search/Search.jsx";
 import Favorites from "./pages/Favorites/Favorites.jsx";
 import FavoritesProvider from "./context/Favorites.jsx";
+import VideoCadastre from "./pages/VideoCadastre/VideoCadastre.jsx";
 
 const AppRoutes = () => {
   return (
@@ -13,6 +14,7 @@ const AppRoutes = () => {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/favorites" element={<Favorites />}></Route>
+          <Route path="/register" element={<VideoCadastre />}></Route>
           <Route path="/watch/:id" element={<Watch />}></Route>
           <Route path="/search" element={<Search />}></Route>
           <Route path="*" element={<NotFound />}></Route>
